@@ -1,0 +1,60 @@
+
+@objects
+    header          #header .middle-wrapper
+      logo          img
+      caption       h1
+    header-logo     #header-logo
+    header-text     #header h1
+  
+    menu            #menu .middle-wrapper
+       item-*      li    
+
+= header = 
+     header:
+       height ~69px
+
+       @on desktop 
+         centered horizontally inside screen
+
+       @on mobile
+          inside screen 0px left right         
+
+     header-logo:
+        left-of header-text 22 px
+        width 48px
+        height 48px
+
+     header.caption:
+        right-of header.logo 22px
+      
+        @on desktop
+         text is "Sample Website for Galen Framework"
+
+        @on mobile 
+         text is "Sample Website"
+     
+= Menu =
+
+  menu:
+    below header 1px
+    aligned vertically all header  
+
+  menu.item-*:
+    width >30px
+    height ~64px
+
+  menu.item-1:
+     inside menu 0px left top
+      
+  @on desktop
+        @for [1-3] as index 
+           menu.item-${index}:
+                   left-of menu.item-${index + 1} 0 to 5px
+                   aligned horizontally all menu.item-${index +1}
+  
+  @on mobile
+     @for [1 -2] as i
+       menu.item-${i}:
+         above menu.item-${i +2} 0px
+         aligned vertically all menu.item-${i +2}
+

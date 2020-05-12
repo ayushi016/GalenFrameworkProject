@@ -1,0 +1,508 @@
+{
+  "testId" : "1-homepage-layout",
+  "name" : "homepage layout",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check homepage layout",
+      "status" : "info",
+      "time" : 1589289201287,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "header",
+        "place" : {
+          "filePath" : "src/test/resources/specs/homepage.gspec",
+          "lineNumber" : 12
+        },
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 14
+            },
+            "name" : "height ~69px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "67 to 71px",
+              "realDistance" : "69px"
+            } ],
+            "highlight" : [ "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 17
+            },
+            "name" : "centered horizontally inside screen",
+            "highlight" : [ "header", "screen" ]
+          } ]
+        }, {
+          "name" : "header-logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "left-of header-text 22 px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-logo",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "header-text",
+                "edge" : "left"
+              },
+              "expectedDistance" : "22px",
+              "realDistance" : "22px"
+            } ],
+            "highlight" : [ "header-logo", "header-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "width 48px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-logo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header-logo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "48px",
+              "realDistance" : "48px"
+            } ],
+            "highlight" : [ "header-logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 25
+            },
+            "name" : "height 48px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header-logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "48px",
+              "realDistance" : "48px"
+            } ],
+            "highlight" : [ "header-logo" ]
+          } ]
+        }, {
+          "name" : "header.caption",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 28
+            },
+            "name" : "right-of header.logo 22px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.caption",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "22px",
+              "realDistance" : "22px"
+            } ],
+            "highlight" : [ "header.caption", "header.logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "text is \"Sample Website for Galen Framework\"",
+            "highlight" : [ "header.caption" ]
+          } ]
+        } ]
+      }, {
+        "name" : "Menu",
+        "place" : {
+          "filePath" : "src/test/resources/specs/homepage.gspec",
+          "lineNumber" : 36
+        },
+        "objects" : [ {
+          "name" : "menu",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 39
+            },
+            "name" : "below header 1px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "1px",
+              "realDistance" : "1px"
+            } ],
+            "highlight" : [ "menu", "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 40
+            },
+            "name" : "aligned vertically all header",
+            "highlight" : [ "menu", "header" ]
+          } ]
+        }, {
+          "name" : "menu.item-1",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 43
+            },
+            "name" : "width >30px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-1",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "menu.item-1",
+                "edge" : "right"
+              },
+              "expectedDistance" : "> 30px",
+              "realDistance" : "100px"
+            } ],
+            "highlight" : [ "menu.item-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "height ~64px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-1",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "menu.item-1",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "62 to 66px",
+              "realDistance" : "63px"
+            } ],
+            "highlight" : [ "menu.item-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 47
+            },
+            "name" : "inside menu 0px left top",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-1",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "menu",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0px",
+              "realDistance" : "0px"
+            }, {
+              "from" : {
+                "object" : "menu.item-1",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "menu",
+                "edge" : "top"
+              },
+              "expectedDistance" : "0px",
+              "realDistance" : "0px"
+            } ],
+            "highlight" : [ "menu.item-1", "menu" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 52
+            },
+            "name" : "left-of menu.item-2 0 to 5px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-1",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "menu.item-2",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0 to 5px",
+              "realDistance" : "0px"
+            } ],
+            "highlight" : [ "menu.item-1", "menu.item-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 53
+            },
+            "name" : "aligned horizontally all menu.item-2",
+            "highlight" : [ "menu.item-1", "menu.item-2" ]
+          } ]
+        }, {
+          "name" : "menu.item-2",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 43
+            },
+            "name" : "width >30px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-2",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "menu.item-2",
+                "edge" : "right"
+              },
+              "expectedDistance" : "> 30px",
+              "realDistance" : "111px"
+            } ],
+            "highlight" : [ "menu.item-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "height ~64px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-2",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "menu.item-2",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "62 to 66px",
+              "realDistance" : "63px"
+            } ],
+            "highlight" : [ "menu.item-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 52
+            },
+            "name" : "left-of menu.item-3 0 to 5px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-2",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "menu.item-3",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0 to 5px",
+              "realDistance" : "0px"
+            } ],
+            "highlight" : [ "menu.item-2", "menu.item-3" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 53
+            },
+            "name" : "aligned horizontally all menu.item-3",
+            "highlight" : [ "menu.item-2", "menu.item-3" ]
+          } ]
+        }, {
+          "name" : "menu.item-3",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 43
+            },
+            "name" : "width >30px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-3",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "menu.item-3",
+                "edge" : "right"
+              },
+              "expectedDistance" : "> 30px",
+              "realDistance" : "100px"
+            } ],
+            "highlight" : [ "menu.item-3" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "height ~64px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-3",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "menu.item-3",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "62 to 66px",
+              "realDistance" : "63px"
+            } ],
+            "highlight" : [ "menu.item-3" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 52
+            },
+            "name" : "left-of menu.item-4 0 to 5px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-3",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "menu.item-4",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0 to 5px",
+              "realDistance" : "0px"
+            } ],
+            "highlight" : [ "menu.item-3", "menu.item-4" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 53
+            },
+            "name" : "aligned horizontally all menu.item-4",
+            "highlight" : [ "menu.item-3", "menu.item-4" ]
+          } ]
+        }, {
+          "name" : "menu.item-4",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 43
+            },
+            "name" : "width >30px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-4",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "menu.item-4",
+                "edge" : "right"
+              },
+              "expectedDistance" : "> 30px",
+              "realDistance" : "100px"
+            } ],
+            "highlight" : [ "menu.item-4" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/homepage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "height ~64px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu.item-4",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "menu.item-4",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "62 to 66px",
+              "realDistance" : "63px"
+            } ],
+            "highlight" : [ "menu.item-4" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "menu.item-3" : {
+          "area" : [ 349, 70, 100, 63 ]
+        },
+        "menu.item-4" : {
+          "area" : [ 449, 70, 100, 63 ]
+        },
+        "header.logo" : {
+          "area" : [ 138, 13, 48, 48 ]
+        },
+        "header" : {
+          "area" : [ 138, 0, 900, 69 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 1177, 733 ]
+        },
+        "header-text" : {
+          "area" : [ 208, 20, 610, 39 ]
+        },
+        "header-logo" : {
+          "area" : [ 138, 13, 48, 48 ]
+        },
+        "header.caption" : {
+          "area" : [ 208, 20, 610, 39 ]
+        },
+        "menu" : {
+          "area" : [ 138, 70, 900, 63 ]
+        },
+        "menu.item-1" : {
+          "area" : [ 138, 70, 100, 63 ]
+        },
+        "menu.item-2" : {
+          "area" : [ 238, 70, 111, 63 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

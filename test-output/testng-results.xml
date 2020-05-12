@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8353" started-at="2020-05-12T18:43:13 IST" finished-at="2020-05-12T18:43:21 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8353" started-at="2020-05-12T18:43:13 IST" finished-at="2020-05-12T18:43:21 IST">
+      <class name="com.demosite.SampleUILayoutTest.WelcomePage">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@3ffcd140]" name="init" is-config="true" duration-ms="5883" started-at="2020-05-12T18:43:13 IST" finished-at="2020-05-12T18:43:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkHomePage()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@3ffcd140]" name="checkHomePage" duration-ms="2026" started-at="2020-05-12T18:43:19 IST" finished-at="2020-05-12T18:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHomePage -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@3ffcd140]" name="reportUpdate" duration-ms="168" started-at="2020-05-12T18:43:21 IST" depends-on-methods="com.demosite.SampleUILayoutTest.WelcomePage.checkHomePage" finished-at="2020-05-12T18:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUpdate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@3ffcd140]" name="tearDown" is-config="true" duration-ms="236" started-at="2020-05-12T18:43:21 IST" finished-at="2020-05-12T18:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demosite.SampleUILayoutTest.WelcomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

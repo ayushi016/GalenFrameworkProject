@@ -1,0 +1,46 @@
+@objects
+   
+   content    #content
+   caption    #my-notes-page  h2
+   menu            #menu .middle-wrapper
+   
+   note-*      .list-group a
+      title           h4
+      description     p
+
+   button-addnote     #my-notes-page .btn-primary  
+
+
+= Content =
+
+    caption:
+       @on desktop
+        text is "My Notes"
+       below menu 20 to 45 px
+       inside content ~ 20px left right
+       height 20 to 40px
+       above note-1 10 to 20px
+       aligned vertically all note-1 
+     
+
+    note-1:
+       above note-2 ~ 0px
+       aligned vertically all note-2
+
+    @for [ 1 - 2 ] as i
+          note-${i}:
+              height ~ 64px
+              inside content ~ 20px left right
+
+          note-${i}.title:
+                inside note-${i} ~ 11 px top, ~ 16px left
+
+          note-${i}.description:
+                below note-${i}.title ~ 5 px
+                inside note-${i} ~ 11 px bottom
+                aligned vertically all note-${i}.title
+
+	
+    button-addnote:
+          height ~ 45px
+         
