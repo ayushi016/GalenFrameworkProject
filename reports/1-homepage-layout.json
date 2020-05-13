@@ -1,12 +1,12 @@
 {
   "testId" : "1-homepage-layout",
-  "name" : "homepage layout",
+  "name" : "Homepage Layout",
   "report" : {
     "nodes" : [ {
-      "name" : "check homepage layout",
+      "name" : "check Homepage Layout",
       "status" : "info",
-      "time" : 1589289201287,
-      "includedTags" : [ "desktop" ],
+      "time" : 1589349144744,
+      "includedTags" : [ "mobile" ],
       "excludedTags" : [ ],
       "sections" : [ {
         "name" : "header",
@@ -40,9 +40,32 @@
             "status" : "info",
             "place" : {
               "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 17
+              "lineNumber" : 20
             },
-            "name" : "centered horizontally inside screen",
+            "name" : "inside screen 0px left right",
+            "meta" : [ {
+              "from" : {
+                "object" : "header",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0px",
+              "realDistance" : "0px"
+            }, {
+              "from" : {
+                "object" : "header",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : "0px",
+              "realDistance" : "0px"
+            } ],
             "highlight" : [ "header", "screen" ]
           } ]
         }, {
@@ -134,9 +157,9 @@
             "status" : "info",
             "place" : {
               "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 31
+              "lineNumber" : 34
             },
-            "name" : "text is \"Sample Website for Galen Framework\"",
+            "name" : "text is \"Sample Website\"",
             "highlight" : [ "header.caption" ]
           } ]
         } ]
@@ -196,7 +219,7 @@
                 "edge" : "right"
               },
               "expectedDistance" : "> 30px",
-              "realDistance" : "100px"
+              "realDistance" : "243px"
             } ],
             "highlight" : [ "menu.item-1" ]
           }, {
@@ -254,30 +277,30 @@
             "status" : "info",
             "place" : {
               "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 52
+              "lineNumber" : 58
             },
-            "name" : "left-of menu.item-2 0 to 5px",
+            "name" : "above menu.item-3 0px",
             "meta" : [ {
               "from" : {
                 "object" : "menu.item-1",
-                "edge" : "right"
+                "edge" : "bottom"
               },
               "to" : {
-                "object" : "menu.item-2",
-                "edge" : "left"
+                "object" : "menu.item-3",
+                "edge" : "top"
               },
-              "expectedDistance" : "0 to 5px",
+              "expectedDistance" : "0px",
               "realDistance" : "0px"
             } ],
-            "highlight" : [ "menu.item-1", "menu.item-2" ]
+            "highlight" : [ "menu.item-1", "menu.item-3" ]
           }, {
             "status" : "info",
             "place" : {
               "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 53
+              "lineNumber" : 59
             },
-            "name" : "aligned horizontally all menu.item-2",
-            "highlight" : [ "menu.item-1", "menu.item-2" ]
+            "name" : "aligned vertically all menu.item-3",
+            "highlight" : [ "menu.item-1", "menu.item-3" ]
           } ]
         }, {
           "name" : "menu.item-2",
@@ -298,7 +321,7 @@
                 "edge" : "right"
               },
               "expectedDistance" : "> 30px",
-              "realDistance" : "111px"
+              "realDistance" : "242px"
             } ],
             "highlight" : [ "menu.item-2" ]
           }, {
@@ -325,30 +348,30 @@
             "status" : "info",
             "place" : {
               "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 52
+              "lineNumber" : 58
             },
-            "name" : "left-of menu.item-3 0 to 5px",
+            "name" : "above menu.item-4 0px",
             "meta" : [ {
               "from" : {
                 "object" : "menu.item-2",
-                "edge" : "right"
+                "edge" : "bottom"
               },
               "to" : {
-                "object" : "menu.item-3",
-                "edge" : "left"
+                "object" : "menu.item-4",
+                "edge" : "top"
               },
-              "expectedDistance" : "0 to 5px",
+              "expectedDistance" : "0px",
               "realDistance" : "0px"
             } ],
-            "highlight" : [ "menu.item-2", "menu.item-3" ]
+            "highlight" : [ "menu.item-2", "menu.item-4" ]
           }, {
             "status" : "info",
             "place" : {
               "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 53
+              "lineNumber" : 59
             },
-            "name" : "aligned horizontally all menu.item-3",
-            "highlight" : [ "menu.item-2", "menu.item-3" ]
+            "name" : "aligned vertically all menu.item-4",
+            "highlight" : [ "menu.item-2", "menu.item-4" ]
           } ]
         }, {
           "name" : "menu.item-3",
@@ -369,7 +392,7 @@
                 "edge" : "right"
               },
               "expectedDistance" : "> 30px",
-              "realDistance" : "100px"
+              "realDistance" : "243px"
             } ],
             "highlight" : [ "menu.item-3" ]
           }, {
@@ -392,34 +415,6 @@
               "realDistance" : "63px"
             } ],
             "highlight" : [ "menu.item-3" ]
-          }, {
-            "status" : "info",
-            "place" : {
-              "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 52
-            },
-            "name" : "left-of menu.item-4 0 to 5px",
-            "meta" : [ {
-              "from" : {
-                "object" : "menu.item-3",
-                "edge" : "right"
-              },
-              "to" : {
-                "object" : "menu.item-4",
-                "edge" : "left"
-              },
-              "expectedDistance" : "0 to 5px",
-              "realDistance" : "0px"
-            } ],
-            "highlight" : [ "menu.item-3", "menu.item-4" ]
-          }, {
-            "status" : "info",
-            "place" : {
-              "filePath" : "src/test/resources/specs/homepage.gspec",
-              "lineNumber" : 53
-            },
-            "name" : "aligned horizontally all menu.item-4",
-            "highlight" : [ "menu.item-3", "menu.item-4" ]
           } ]
         }, {
           "name" : "menu.item-4",
@@ -440,7 +435,7 @@
                 "edge" : "right"
               },
               "expectedDistance" : "> 30px",
-              "realDistance" : "100px"
+              "realDistance" : "242px"
             } ],
             "highlight" : [ "menu.item-4" ]
           }, {
@@ -468,40 +463,40 @@
       } ],
       "objects" : {
         "menu.item-3" : {
-          "area" : [ 349, 70, 100, 63 ]
+          "area" : [ 0, 133, 243, 63 ]
         },
         "menu.item-4" : {
-          "area" : [ 449, 70, 100, 63 ]
+          "area" : [ 242, 133, 242, 63 ]
         },
         "header.logo" : {
-          "area" : [ 138, 13, 48, 48 ]
+          "area" : [ 0, 13, 48, 48 ]
         },
         "header" : {
-          "area" : [ 138, 0, 900, 69 ]
+          "area" : [ 0, 0, 485, 69 ]
         },
         "screen" : {
-          "area" : [ 0, 0, 1177, 733 ]
+          "area" : [ 0, 0, 485, 834 ]
         },
         "header-text" : {
-          "area" : [ 208, 20, 610, 39 ]
+          "area" : [ 70, 20, 261, 39 ]
         },
         "header-logo" : {
-          "area" : [ 138, 13, 48, 48 ]
+          "area" : [ 0, 13, 48, 48 ]
         },
         "header.caption" : {
-          "area" : [ 208, 20, 610, 39 ]
+          "area" : [ 70, 20, 261, 39 ]
         },
         "menu" : {
-          "area" : [ 138, 70, 900, 63 ]
+          "area" : [ 0, 70, 485, 126 ]
         },
         "menu.item-1" : {
-          "area" : [ 138, 70, 100, 63 ]
+          "area" : [ 0, 70, 243, 63 ]
         },
         "menu.item-2" : {
-          "area" : [ 238, 70, 111, 63 ]
+          "area" : [ 242, 70, 242, 63 ]
         }
       },
-      "screenshot" : "layout-1-screenshot.png",
+      "screenshot" : "layout-4-screenshot.png",
       "type" : "layout"
     } ]
   }

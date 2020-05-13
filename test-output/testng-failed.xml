@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demosite.SampleUILayoutTest.WelcomePage">
+      <class name="com.demosite.SampleUILayoutTest.layoutTest">
         <methods>
-          <include name="checkLogoVisibleAndImageVerification"/>
-          <include name="init"/>
+          <include name="initDriver"/>
+          <include name="initReport"/>
+          <include name="provideTestEndDate"/>
+          <include name="quitDriver"/>
           <include name="reportUpdate"/>
-          <include name="tearDown"/>
+          <include name="MyNotesPageonDevice" invocation-numbers="0 2"/>
         </methods>
-      </class> <!-- com.demosite.SampleUILayoutTest.WelcomePage -->
+      </class> <!-- com.demosite.SampleUILayoutTest.layoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

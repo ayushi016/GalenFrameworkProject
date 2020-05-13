@@ -1,0 +1,51 @@
+{
+  "testId" : "2-loginpage-layout",
+  "name" : "Loginpage Layout",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check Loginpage Layout",
+      "status" : "info",
+      "time" : 1589346357390,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Login page",
+        "place" : {
+          "filePath" : "src/test/resources/specs/loginpage.gspec",
+          "lineNumber" : 4
+        },
+        "objects" : [ {
+          "name" : "login-panel",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/loginpage.gspec",
+              "lineNumber" : 7
+            },
+            "name" : "width 400px",
+            "meta" : [ {
+              "from" : {
+                "object" : "login-panel",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "login-panel",
+                "edge" : "right"
+              },
+              "expectedDistance" : "400px",
+              "realDistance" : "400px"
+            } ],
+            "highlight" : [ "login-panel" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "login-panel" : {
+          "area" : [ 388, 153, 400, 248 ]
+        }
+      },
+      "screenshot" : "layout-2-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "testId" : "2-my-notes-page-layout-on-device-tablet",
+  "name" : "My Notes page Layout on device tablet",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check My Notes page Layout on device tablet",
+      "status" : "info",
+      "time" : 1589350792747,
+      "includedTags" : [ "tablet" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Content",
+        "place" : {
+          "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+          "lineNumber" : 14
+        },
+        "objects" : [ {
+          "name" : "caption",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "below menu 20 to 45 px",
+            "meta" : [ {
+              "from" : {
+                "object" : "caption",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "menu",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "20 to 45px",
+              "realDistance" : "40px"
+            } ],
+            "highlight" : [ "caption", "menu" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 20
+            },
+            "name" : "inside content ~ 20px left right",
+            "meta" : [ {
+              "from" : {
+                "object" : "caption",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "content",
+                "edge" : "left"
+              },
+              "expectedDistance" : "18 to 22px",
+              "realDistance" : "20px"
+            }, {
+              "from" : {
+                "object" : "caption",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "content",
+                "edge" : "right"
+              },
+              "expectedDistance" : "18 to 22px",
+              "realDistance" : "20px"
+            } ],
+            "highlight" : [ "caption", "content" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "height 20 to 40px",
+            "meta" : [ {
+              "from" : {
+                "object" : "caption",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "caption",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "20 to 40px",
+              "realDistance" : "33px"
+            } ],
+            "highlight" : [ "caption" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 22
+            },
+            "name" : "above note-1 10 to 20px",
+            "meta" : [ {
+              "from" : {
+                "object" : "caption",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "note-1",
+                "edge" : "top"
+              },
+              "expectedDistance" : "10 to 20px",
+              "realDistance" : "10px"
+            } ],
+            "highlight" : [ "caption", "note-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "aligned vertically all note-1",
+            "highlight" : [ "caption", "note-1" ]
+          } ]
+        }, {
+          "name" : "note-1",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 27
+            },
+            "name" : "above note-2 ~ 0px",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-1",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "note-2",
+                "edge" : "top"
+              },
+              "expectedDistance" : "-2 to 2px",
+              "realDistance" : "-1px"
+            } ],
+            "highlight" : [ "note-1", "note-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 28
+            },
+            "name" : "aligned vertically all note-2",
+            "highlight" : [ "note-1", "note-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 32
+            },
+            "name" : "height ~ 64px",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-1",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "note-1",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "62 to 66px",
+              "realDistance" : "64px"
+            } ],
+            "highlight" : [ "note-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 33
+            },
+            "name" : "inside content ~ 20px left right",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-1",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "content",
+                "edge" : "left"
+              },
+              "expectedDistance" : "18 to 22px",
+              "realDistance" : "20px"
+            }, {
+              "from" : {
+                "object" : "note-1",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "content",
+                "edge" : "right"
+              },
+              "expectedDistance" : "18 to 22px",
+              "realDistance" : "20px"
+            } ],
+            "highlight" : [ "note-1", "content" ]
+          } ]
+        }, {
+          "name" : "note-1.title",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 36
+            },
+            "name" : "inside note-1 ~ 11 px top, ~ 16px left",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-1.title",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "note-1",
+                "edge" : "top"
+              },
+              "expectedDistance" : "9 to 13px",
+              "realDistance" : "11px"
+            }, {
+              "from" : {
+                "object" : "note-1.title",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "note-1",
+                "edge" : "left"
+              },
+              "expectedDistance" : "14 to 18px",
+              "realDistance" : "16px"
+            } ],
+            "highlight" : [ "note-1.title", "note-1" ]
+          } ]
+        }, {
+          "name" : "note-1.description",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 39
+            },
+            "name" : "below note-1.title ~ 5 px",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-1.description",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "note-1.title",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "3 to 7px",
+              "realDistance" : "5px"
+            } ],
+            "highlight" : [ "note-1.description", "note-1.title" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 40
+            },
+            "name" : "inside note-1 ~ 11 px bottom",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-1.description",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "note-1",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "9 to 13px",
+              "realDistance" : "11px"
+            } ],
+            "highlight" : [ "note-1.description", "note-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 41
+            },
+            "name" : "aligned vertically all note-1.title",
+            "highlight" : [ "note-1.description", "note-1.title" ]
+          } ]
+        }, {
+          "name" : "note-2",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 32
+            },
+            "name" : "height ~ 64px",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-2",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "note-2",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "62 to 66px",
+              "realDistance" : "64px"
+            } ],
+            "highlight" : [ "note-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 33
+            },
+            "name" : "inside content ~ 20px left right",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-2",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "content",
+                "edge" : "left"
+              },
+              "expectedDistance" : "18 to 22px",
+              "realDistance" : "20px"
+            }, {
+              "from" : {
+                "object" : "note-2",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "content",
+                "edge" : "right"
+              },
+              "expectedDistance" : "18 to 22px",
+              "realDistance" : "20px"
+            } ],
+            "highlight" : [ "note-2", "content" ]
+          } ]
+        }, {
+          "name" : "note-2.title",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 36
+            },
+            "name" : "inside note-2 ~ 11 px top, ~ 16px left",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-2.title",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "note-2",
+                "edge" : "top"
+              },
+              "expectedDistance" : "9 to 13px",
+              "realDistance" : "11px"
+            }, {
+              "from" : {
+                "object" : "note-2.title",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "note-2",
+                "edge" : "left"
+              },
+              "expectedDistance" : "14 to 18px",
+              "realDistance" : "16px"
+            } ],
+            "highlight" : [ "note-2.title", "note-2" ]
+          } ]
+        }, {
+          "name" : "note-2.description",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 39
+            },
+            "name" : "below note-2.title ~ 5 px",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-2.description",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "note-2.title",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "3 to 7px",
+              "realDistance" : "5px"
+            } ],
+            "highlight" : [ "note-2.description", "note-2.title" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 40
+            },
+            "name" : "inside note-2 ~ 11 px bottom",
+            "meta" : [ {
+              "from" : {
+                "object" : "note-2.description",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "note-2",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "9 to 13px",
+              "realDistance" : "11px"
+            } ],
+            "highlight" : [ "note-2.description", "note-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 41
+            },
+            "name" : "aligned vertically all note-2.title",
+            "highlight" : [ "note-2.description", "note-2.title" ]
+          } ]
+        }, {
+          "name" : "button-addnote",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/myNotesPage.gspec",
+              "lineNumber" : 45
+            },
+            "name" : "height ~ 45px",
+            "meta" : [ {
+              "from" : {
+                "object" : "button-addnote",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "button-addnote",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "43 to 47px",
+              "realDistance" : "45px"
+            } ],
+            "highlight" : [ "button-addnote" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "note-2" : {
+          "area" : [ 20, 279, 737, 64 ]
+        },
+        "note-1" : {
+          "area" : [ 20, 216, 737, 64 ]
+        },
+        "note-2.description" : {
+          "area" : [ 36, 314, 705, 18 ]
+        },
+        "note-2.title" : {
+          "area" : [ 36, 290, 705, 19 ]
+        },
+        "note-1.description" : {
+          "area" : [ 36, 251, 705, 18 ]
+        },
+        "caption" : {
+          "area" : [ 20, 173, 737, 33 ]
+        },
+        "button-addnote" : {
+          "area" : [ 20, 363, 106, 45 ]
+        },
+        "menu" : {
+          "area" : [ 0, 70, 777, 63 ]
+        },
+        "content" : {
+          "area" : [ 0, 133, 777, 450 ]
+        },
+        "note-1.title" : {
+          "area" : [ 36, 227, 705, 19 ]
+        }
+      },
+      "screenshot" : "layout-2-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

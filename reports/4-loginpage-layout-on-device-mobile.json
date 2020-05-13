@@ -1,0 +1,54 @@
+{
+  "testId" : "4-loginpage-layout-on-device-mobile",
+  "name" : "Loginpage Layout on device mobile",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check Loginpage Layout on device mobile",
+      "status" : "info",
+      "time" : 1589350804528,
+      "includedTags" : [ "mobile" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Login page",
+        "place" : {
+          "filePath" : "src/test/resources/specs/loginpage.gspec",
+          "lineNumber" : 4
+        },
+        "objects" : [ {
+          "name" : "login-panel",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/specs/loginpage.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "inside screen 20 to 30px right",
+            "meta" : [ {
+              "from" : {
+                "object" : "login-panel",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : "20 to 30px",
+              "realDistance" : "20px"
+            } ],
+            "highlight" : [ "login-panel", "screen" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "login-panel" : {
+          "area" : [ 20, 236, 445, 241 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 485, 796 ]
+        }
+      },
+      "screenshot" : "layout-4-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}
