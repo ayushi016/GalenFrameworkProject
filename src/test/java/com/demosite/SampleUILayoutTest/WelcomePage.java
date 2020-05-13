@@ -29,8 +29,7 @@ public class WelcomePage {
     private static final String baseURL="http://testapp.galenframework.com/";
     private WebDriver driver;
     private LayoutReport layoutReport;
-    GenerateReport genReport = new GenerateReport();
-  
+     
     @BeforeClass
     public void init() {
     	String driverPath = "src/main/resources/driver/chromedriver";
@@ -48,8 +47,7 @@ public class WelcomePage {
     	
     	//Executing Layout check and obtaining the Layout report
        layoutReport = Galen.checkLayout(driver, "src/test/resources/specs/homepage.gspec", Arrays.asList("desktop"));
-        genReport.generateLayoutReport(layoutReport, "Homepage Layout");
-        
+              
     }
     
     @Test(priority = 2)
@@ -57,52 +55,48 @@ public class WelcomePage {
     	
          driver.findElement(By.cssSelector(".button-login")).click();
          Thread.sleep(1000);
-    	 layoutReport = Galen.checkLayout(driver, "src/test/resources/specs/loginpage.gspec", Arrays.asList("desktop"));
-    	 genReport.generateLayoutReport(layoutReport, "Loginpage Layout");
-    	
+    	 Galen.checkLayout(driver, "src/test/resources/specs/loginpage.gspec", Arrays.asList("desktop"));
+    	    	
     }
     
-    @AfterMethod
-    public void reportUpdate() throws IOException {
-    	genReport.buildHtmlReport();
-    	
-    }
+  @AfterMethod
+  public void reportUpdate() {
+      try {
+      	 List<GalenTestInfo> tests = new LinkedList<GalenTestInfo>();
+      	 
+           //Create a GalenTestInfo object
+           GalenTestInfo test = GalenTestInfo.fromString("homepage layout on device");
     
+           //Get layoutReport and assign to test object
+           test.getReport().layout(layoutReport, "check homepage layout");
+    
+           //Add test object to the tests list
+           tests.add(test);
+    
+           //Create a htmlReportBuilder object
+           HtmlReportBuilder htmlReportBuilder = new HtmlReportBuilder();
+    
+           //Create a report under /target folder based on tests list
+           htmlReportBuilder.build(tests, "htmlreports");
+    
+           //If layoutReport has errors Assert Fail
+           if (layoutReport.errors() > 0)
+           {
+               Assert.fail("Layout test failed");
+           }
+       } catch (Exception e) {
+          e.printStackTrace();
+      }
+  }
+
+    
+   
     @AfterClass
     public void close() {
         driver.quit();
     }
     
-//    @AfterMethod
-//    public void reportUpdate() {
-//        try {
-//        	 List<GalenTestInfo> tests = new LinkedList<GalenTestInfo>();
-//        	 
-//             //Create a GalenTestInfo object
-//             GalenTestInfo test = GalenTestInfo.fromString("homepage layout");
-//      
-//             //Get layoutReport and assign to test object
-//             test.getReport().layout(layoutReport, "check homepage layout");
-//      
-//             //Add test object to the tests list
-//             tests.add(test);
-//      
-//             //Create a htmlReportBuilder object
-//             HtmlReportBuilder htmlReportBuilder = new HtmlReportBuilder();
-//      
-//             //Create a report under /target folder based on tests list
-//             htmlReportBuilder.build(tests, "reports");
-//      
-//             //If layoutReport has errors Assert Fail
-//             if (layoutReport.errors() > 0)
-//             {
-//                 Assert.fail("Layout test failed");
-//             }
-//         } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
- 
+
   
 
 

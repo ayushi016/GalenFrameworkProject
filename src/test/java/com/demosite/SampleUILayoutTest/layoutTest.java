@@ -15,14 +15,14 @@ import com.galenframework.reports.model.LayoutReport;
 import HTMLReports.GenerateReport;
 
 public class layoutTest  extends GalenBase {
-	private LayoutReport homelayoutReport,loginlayoutReport,layoutReport;
+	private LayoutReport layoutReport;
 	GenerateReport genReport = new GenerateReport();
 	
 	 @Test(dataProvider = "devices")
 	    public void welcomePageonDevice(TestDevice device) throws IOException {
 	        load("/");
-	        homelayoutReport= Galen.checkLayout(getDriver(), "src/test/resources/specs/homepage.gspec", device.getTags());
-	        genReport.generateLayoutReport(homelayoutReport, "Homepage Layout on device "+device.getName());
+	        layoutReport= Galen.checkLayout(getDriver(), "src/test/resources/specs/homepage.gspec", device.getTags());
+	        genReport.generateLayoutReport(layoutReport, "Homepage Layout on device "+device.getName());
 	    }
 
 	    @Test(dataProvider = "devices")
