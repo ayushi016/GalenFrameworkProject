@@ -1,37 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8869" started-at="2020-05-13T11:57:12 IST" finished-at="2020-05-13T11:57:21 IST">
+  <suite name="Default suite" duration-ms="37311" started-at="2020-05-13T16:14:16 IST" finished-at="2020-05-13T16:14:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8869" started-at="2020-05-13T11:57:12 IST" finished-at="2020-05-13T11:57:21 IST">
-      <class name="com.demosite.SampleUILayoutTest.WelcomePage">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@80ec1f8]" name="init" is-config="true" duration-ms="4853" started-at="2020-05-13T11:57:12 IST" finished-at="2020-05-13T11:57:17 IST">
+    <test name="Default test" duration-ms="37311" started-at="2020-05-13T16:14:16 IST" finished-at="2020-05-13T16:14:54 IST">
+      <class name="com.demosite.SampleUILayoutTest.layoutTest">
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initDriver" is-config="true" duration-ms="1511" started-at="2020-05-13T16:14:16 IST" finished-at="2020-05-13T16:14:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@58860997]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="checkHomePage()[pri:1, instance:com.demosite.SampleUILayoutTest.WelcomePage@80ec1f8]" name="checkHomePage" duration-ms="2186" started-at="2020-05-13T11:57:17 IST" finished-at="2020-05-13T11:57:19 IST">
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initReport" is-config="true" duration-ms="12" started-at="2020-05-13T16:14:18 IST" finished-at="2020-05-13T16:14:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demosite.SampleUILayoutTest.layoutTest.MyNotesPageonDevice(com.galen.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@58860997]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkHomePage -->
-        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@80ec1f8]" name="reportUpdate" is-config="true" duration-ms="164" started-at="2020-05-13T11:57:19 IST" finished-at="2020-05-13T11:57:19 IST">
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="MyNotesPageonDevice(com.galen.base.GalenBase$TestDevice)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="MyNotesPageonDevice" duration-ms="6034" started-at="2020-05-13T16:14:18 IST" data-provider="devices" finished-at="2020-05-13T16:14:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.galen.base.GalenBase$TestDevice@2b72cb8a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyNotesPageonDevice -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="reportUpdate" is-config="true" duration-ms="168" started-at="2020-05-13T16:14:24 IST" finished-at="2020-05-13T16:14:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUpdate -->
-        <test-method status="PASS" signature="checkLoginPage()[pri:2, instance:com.demosite.SampleUILayoutTest.WelcomePage@80ec1f8]" name="checkLoginPage" duration-ms="1515" started-at="2020-05-13T11:57:19 IST" finished-at="2020-05-13T11:57:20 IST">
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="provideTestEndDate" is-config="true" duration-ms="1" started-at="2020-05-13T16:14:24 IST" finished-at="2020-05-13T16:14:24 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkLoginPage -->
-        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@80ec1f8]" name="reportUpdate" is-config="true" duration-ms="40" started-at="2020-05-13T11:57:20 IST" finished-at="2020-05-13T11:57:20 IST">
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="quitDriver" is-config="true" duration-ms="790" started-at="2020-05-13T16:14:24 IST" finished-at="2020-05-13T16:14:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initDriver" is-config="true" duration-ms="747" started-at="2020-05-13T16:14:25 IST" finished-at="2020-05-13T16:14:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@81b5db0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initReport" is-config="true" duration-ms="0" started-at="2020-05-13T16:14:26 IST" finished-at="2020-05-13T16:14:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demosite.SampleUILayoutTest.layoutTest.MyNotesPageonDevice(com.galen.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@81b5db0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="MyNotesPageonDevice(com.galen.base.GalenBase$TestDevice)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="MyNotesPageonDevice" duration-ms="5879" started-at="2020-05-13T16:14:26 IST" data-provider="devices" finished-at="2020-05-13T16:14:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.galen.base.GalenBase$TestDevice@2c30b71f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyNotesPageonDevice -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="reportUpdate" is-config="true" duration-ms="55" started-at="2020-05-13T16:14:31 IST" finished-at="2020-05-13T16:14:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUpdate -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.demosite.SampleUILayoutTest.WelcomePage@80ec1f8]" name="close" is-config="true" duration-ms="69" started-at="2020-05-13T11:57:20 IST" finished-at="2020-05-13T11:57:21 IST">
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="provideTestEndDate" is-config="true" duration-ms="0" started-at="2020-05-13T16:14:31 IST" finished-at="2020-05-13T16:14:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.demosite.SampleUILayoutTest.WelcomePage -->
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="quitDriver" is-config="true" duration-ms="121" started-at="2020-05-13T16:14:31 IST" finished-at="2020-05-13T16:14:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initDriver" is-config="true" duration-ms="652" started-at="2020-05-13T16:14:32 IST" finished-at="2020-05-13T16:14:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7487b142]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initReport" is-config="true" duration-ms="1" started-at="2020-05-13T16:14:32 IST" finished-at="2020-05-13T16:14:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demosite.SampleUILayoutTest.layoutTest.loginPageonDevice(com.galen.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7487b142]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="loginPageonDevice(com.galen.base.GalenBase$TestDevice)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="loginPageonDevice" duration-ms="4204" started-at="2020-05-13T16:14:32 IST" data-provider="devices" finished-at="2020-05-13T16:14:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.galen.base.GalenBase$TestDevice@71178a52]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageonDevice -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="reportUpdate" is-config="true" duration-ms="40" started-at="2020-05-13T16:14:36 IST" finished-at="2020-05-13T16:14:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUpdate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="quitDriver" is-config="true" duration-ms="71" started-at="2020-05-13T16:14:36 IST" finished-at="2020-05-13T16:14:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="provideTestEndDate" is-config="true" duration-ms="0" started-at="2020-05-13T16:14:36 IST" finished-at="2020-05-13T16:14:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initDriver" is-config="true" duration-ms="651" started-at="2020-05-13T16:14:37 IST" finished-at="2020-05-13T16:14:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7139bd31]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="loginPageonDevice(com.galen.base.GalenBase$TestDevice)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="loginPageonDevice" duration-ms="4004" started-at="2020-05-13T16:14:37 IST" data-provider="devices" finished-at="2020-05-13T16:14:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.galen.base.GalenBase$TestDevice@40d10481]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageonDevice -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initReport" is-config="true" duration-ms="0" started-at="2020-05-13T16:14:37 IST" finished-at="2020-05-13T16:14:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demosite.SampleUILayoutTest.layoutTest.loginPageonDevice(com.galen.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7139bd31]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="reportUpdate" is-config="true" duration-ms="35" started-at="2020-05-13T16:14:41 IST" finished-at="2020-05-13T16:14:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUpdate -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="provideTestEndDate" is-config="true" duration-ms="1" started-at="2020-05-13T16:14:41 IST" finished-at="2020-05-13T16:14:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="quitDriver" is-config="true" duration-ms="312" started-at="2020-05-13T16:14:41 IST" finished-at="2020-05-13T16:14:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initDriver" is-config="true" duration-ms="753" started-at="2020-05-13T16:14:42 IST" finished-at="2020-05-13T16:14:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@199bc830]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initReport" is-config="true" duration-ms="0" started-at="2020-05-13T16:14:42 IST" finished-at="2020-05-13T16:14:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demosite.SampleUILayoutTest.layoutTest.welcomePageonDevice(com.galen.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@199bc830]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="welcomePageonDevice(com.galen.base.GalenBase$TestDevice)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="welcomePageonDevice" duration-ms="5242" started-at="2020-05-13T16:14:42 IST" data-provider="devices" finished-at="2020-05-13T16:14:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.galen.base.GalenBase$TestDevice@6a9950f1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomePageonDevice -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="reportUpdate" is-config="true" duration-ms="35" started-at="2020-05-13T16:14:48 IST" finished-at="2020-05-13T16:14:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUpdate -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="provideTestEndDate" is-config="true" duration-ms="1" started-at="2020-05-13T16:14:48 IST" finished-at="2020-05-13T16:14:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="quitDriver" is-config="true" duration-ms="69" started-at="2020-05-13T16:14:48 IST" finished-at="2020-05-13T16:14:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initDriver" is-config="true" duration-ms="671" started-at="2020-05-13T16:14:48 IST" finished-at="2020-05-13T16:14:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4b3fe06e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="initReport" is-config="true" duration-ms="1" started-at="2020-05-13T16:14:48 IST" finished-at="2020-05-13T16:14:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demosite.SampleUILayoutTest.layoutTest.welcomePageonDevice(com.galen.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4b3fe06e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="welcomePageonDevice(com.galen.base.GalenBase$TestDevice)[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="welcomePageonDevice" duration-ms="4816" started-at="2020-05-13T16:14:48 IST" data-provider="devices" finished-at="2020-05-13T16:14:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.galen.base.GalenBase$TestDevice@363a3d15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomePageonDevice -->
+        <test-method status="PASS" signature="reportUpdate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="reportUpdate" is-config="true" duration-ms="48" started-at="2020-05-13T16:14:53 IST" finished-at="2020-05-13T16:14:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUpdate -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="provideTestEndDate" is-config="true" duration-ms="0" started-at="2020-05-13T16:14:53 IST" finished-at="2020-05-13T16:14:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.demosite.SampleUILayoutTest.layoutTest@78a2da20]" name="quitDriver" is-config="true" duration-ms="324" started-at="2020-05-13T16:14:53 IST" finished-at="2020-05-13T16:14:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.demosite.SampleUILayoutTest.layoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

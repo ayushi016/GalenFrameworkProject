@@ -5,7 +5,7 @@
     "nodes" : [ {
       "name" : "check Loginpage Layout on device desktop",
       "status" : "info",
-      "time" : 1589349555173,
+      "time" : 1589366681696,
       "includedTags" : [ "desktop" ],
       "excludedTags" : [ ],
       "sections" : [ {

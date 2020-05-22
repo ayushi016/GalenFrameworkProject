@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "homepage layout on device",
+    "startedAt" : 1589366577141,
+    "endedAt" : 1589366577141,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 24,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 24
+    },
+    "testId" : "1-homepage-layout-on-device",
+    "duration" : 0,
+    "failed" : false
+  } ]
+}

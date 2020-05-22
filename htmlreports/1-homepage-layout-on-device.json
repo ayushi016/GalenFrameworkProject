@@ -1,11 +1,11 @@
 {
-  "testId" : "6-homepage-layout-on-device-desktop",
-  "name" : "Homepage Layout on device desktop",
+  "testId" : "1-homepage-layout-on-device",
+  "name" : "homepage layout on device",
   "report" : {
     "nodes" : [ {
-      "name" : "check Homepage Layout on device desktop",
+      "name" : "check homepage layout",
       "status" : "info",
-      "time" : 1589366693636,
+      "time" : 1589366577141,
       "includedTags" : [ "desktop" ],
       "excludedTags" : [ ],
       "sections" : [ {
@@ -468,40 +468,40 @@
       } ],
       "objects" : {
         "menu.item-3" : {
-          "area" : [ 261, 70, 100, 63 ]
+          "area" : [ 349, 70, 100, 63 ]
         },
         "menu.item-4" : {
-          "area" : [ 361, 70, 100, 63 ]
+          "area" : [ 449, 70, 100, 63 ]
         },
         "header.logo" : {
-          "area" : [ 50, 13, 48, 48 ]
+          "area" : [ 138, 13, 48, 48 ]
         },
         "header" : {
-          "area" : [ 50, 0, 900, 69 ]
+          "area" : [ 138, 0, 900, 69 ]
         },
         "screen" : {
-          "area" : [ 0, 0, 1001, 733 ]
+          "area" : [ 0, 0, 1177, 733 ]
         },
         "header-text" : {
-          "area" : [ 120, 20, 610, 39 ]
+          "area" : [ 208, 20, 610, 39 ]
         },
         "header-logo" : {
-          "area" : [ 50, 13, 48, 48 ]
+          "area" : [ 138, 13, 48, 48 ]
         },
         "header.caption" : {
-          "area" : [ 120, 20, 610, 39 ]
+          "area" : [ 208, 20, 610, 39 ]
         },
         "menu" : {
-          "area" : [ 50, 70, 900, 63 ]
+          "area" : [ 138, 70, 900, 63 ]
         },
         "menu.item-1" : {
-          "area" : [ 50, 70, 100, 63 ]
+          "area" : [ 138, 70, 100, 63 ]
         },
         "menu.item-2" : {
-          "area" : [ 150, 70, 111, 63 ]
+          "area" : [ 238, 70, 111, 63 ]
         }
       },
-      "screenshot" : "layout-6-screenshot.png",
+      "screenshot" : "layout-1-screenshot.png",
       "type" : "layout"
     } ]
   }

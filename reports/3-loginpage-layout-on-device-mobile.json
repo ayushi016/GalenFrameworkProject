@@ -5,7 +5,7 @@
     "nodes" : [ {
       "name" : "check Loginpage Layout on device mobile",
       "status" : "info",
-      "time" : 1589349547742,
+      "time" : 1589366676929,
       "includedTags" : [ "mobile" ],
       "excludedTags" : [ ],
       "sections" : [ {
